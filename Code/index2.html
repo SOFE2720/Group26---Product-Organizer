@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <title>KO Login</title>
+    <h1 style="text-align:center;color: #f1f1f1;">Frank's Organizer Registry</h1>
+    <link rel="stylesheet" href="index.css">
+    <body>
+        
+    <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+        
+          
+    <form class="modal-content animate" action="main.html" onsubmit="return registerAlert();">
+    <script>
+        function registerAlert(){
+        alert("You have successfully registered");
+        }
+    </script>    
+        <div class="imgcontainer">
+            <img src="img/logo.jpg" alt="Avatar" class="avatar">
+        </div>
+        
+        <div class="container">
+
+            <input type="text" placeholder="Enter Email" name="uname" 
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+               style="background-color: #f1f1f1;" required>
+
+               <input type="text" placeholder="Enter Username" name="uname" 
+               pattern="^\S{8,}$" 
+               style="background-color: #f1f1f1;" required>
+        
+               <input style="background-color: #f1f1f1;" id="password" name="password" type="password" 
+               pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ?
+                'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = 
+                this.value;" placeholder="Password" required>
+
+               <input style="background-color: #f1f1f1;" id="password_two" name="password_two" type="password" 
+               pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ?
+                'Please enter the same Password as above' : '');" placeholder="Verify Password" required>
+        
+                <button type="submit" style="background-color:grey;">Register</button>
+                
+                <span class="psw"><a href="index.html" style="text-align:center;color: #f1f1f1;">Login Page</a></span>
+        </div>
+        
+

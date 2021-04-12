@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+
+<title>Frank's GS</title>
+
+<body>
+
+  <div class="topnav" id="stnav">
+    <a href="#stnav">Search</a>
+    <a href="#sort1">Product List</a>
+    <a href="#myDIV">Grocery List</a>
+    <a href="#settings">Settings</a>
+    <a href="#settings">Logout</a>
+  </div>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var stnav = document.getElementById("stnav");
+    var st = stnav.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= st) {
+        stnav.classList.add("st")
+      } else {
+        stnav.classList.remove("st");
+      }
+    }
+    </script>
+
+  <br><br>
+  <h1 style="font-size: 100px;text-align: center;">Frank's Grocery Store</h1>
+  <h3 style="font-size: 50px;text-align: center;">The easiest way to plan your meal!</h3>
+
+  <form autocomplete="off" action="main.html" id="search">
+    <div class="autocomplete" style="width: 700px;">
+      <input id="myInput" type="text" placeholder="See if we have what you're looking for..." style="font-size: 30px;">
+      <script src="search.js"></script>
+    </div>
+  </form>
+<div id="sort1"></div>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+<div id="allsort">
+ <div id="sort2">
+  <script src="main.js"></script>
+  <p> Sort by : 
+  <button onclick="sort(0)" style="font-size: 20px;">Alphabetically</button>
+  <button onclick="sort(1)" style="font-size: 20px;">Price</button>
+  <button onclick="sort(2)" style="font-size: 20px;">Calories</button>
+  </div>
+  </p>
+  
+  <table id="sort" style="font-size: 30px;">
+    <tr>
+      <th>Item</th>
+      <th>Avg. Price ($)</th>
+      <th>Calories</th>
+    </tr>
+    <tr>
+      <td>Bread (loaf)</td>
+      <td>4.21</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>Cheese (Mozerella) - 100g</td>
+      <td>6.98</td>
+      <td>230</td>
+    </tr>
+    <tr>
+      <td>Chicken Breast (250g)</td>
+      <td>9.61</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Milk (1L)</td>
+      <td>4.75</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>Chips (100g)</td>
+      <td>2.34</td>
+      <td>210</td>
+    </tr>
+    <tr>
+      <td>Ground Beef (100g)</td>
+      <td>8.45</td>
+      <td>410</td>
+    </tr>
+    <tr>
+      <td>Apples (100g)</td>
+      <td>3.29</td>
+      <td>080</td>
+    </tr>
+    <tr>
+      <td>Orange (100g)</td>
+      <td>3.49</td>
+      <td>075</td>
+    </tr>
+    <tr>
+      <td>Potato (100g)</td>
+      <td>2.89</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <td>Pasta (100g)</td>
+      <td>5.10</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <td>Bacon (100g)</td>
+      <td>7.70</td>
+      <td>390</td>
+    </tr>
+    <tr>
+      <td>Lemonade (1L)</td>
+      <td>4.01</td>
+      <td>125</td>
+    </tr>
+    <tr>
+      <td>Pickle (100g)</td>
+      <td>4.10</td>
+      <td>095</td>
+    </tr>
+  </table>
+
+<br><br><br>
+
+</div>
+
+<div id="myDIV" class="header">
+  <h2 style="margin: 5px;font-size: 65px;">My Grocery List</h2>
+  <br>
+  <input type="text" id="myInput2" class="gl" placeholder="New item" style="font-size: 40px;">
+  <span onclick="groceryList()" class="add" style="font-size: 40px;">Add</span>
+</div>
+
+<ul id="myUL"></ul>
+
+<script src="groceryList.js"></script>
+
+    <div id="settings" style="background-color: rgb(49, 66, 52);padding: 20px;">
+        <h2>Settings</h2>
+
+        <p>Change Background Colour:</p>
+
+      <button class="colorButton">Black</button>
+      <button class="colorButton">Lightgreen</button>
+      <script>
+        const colorButtons = [...document.querySelectorAll('.colorButton')];
+document.addEventListener('click', e => {
+    if (!colorButtons.includes(e.target)) return;
+    document.body.style.background = e.target.textContent;
+});
+      </script>
+    
+
+  <p>Remove Features:</p>
+  <button onclick="clearBox('search')">Search</button>
+  <button onclick="clearBox('allsort')">Product List</button>
+  <button onclick="clearBox('myDIV')">Grocery List</button>
+  <script>
+    function clearBox(elementID){
+    document.getElementById(elementID).innerHTML = "";
+}
+  </script>
+<br><br><br>
+  
+  <a href="main.html" type="button" style="color: aliceblue;background-color: rgb(199, 199, 199);padding: 2px;"
+  >Reset with Notification Turned ON</a>
+</div>
+</html>
+
+

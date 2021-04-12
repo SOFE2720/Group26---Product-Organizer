@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    
+    <title>My Organizer</title>
+    
+    <body>
+    
+      <div class="topnav">
+        <a class="active" href="main.html">Home</a>
+        <a href="notification.html">About</a>
+        <a href="index.html">Logout</a>
+      </div>
+    
+      <br>
+
+    <script src="test.js"></script>
+
+      <style>
+        p{
+          background-color: rgb(19, 59, 21);
+          padding: 3%;
+          text-align: center;
+          font-family:verdana
+          
+          
+        }
+      </style>
+<div style="background-image: url('img/food.jpg');">
+  <br><br><br><br>
+    <p style="width: 50%;text-align: center;margin: auto;font-size: 22px;">
+      Frank's Online Grocery Website provides valued
+      customers with all the information needed to plan 
+      their next meal. The Website's main features 
+      include a search bar to check on the availability 
+      of a product, a customizable product list, a personal 
+      Grocery List and live updates on a product's stock.
+    </p>
+
+    <p style="width: 50%;text-align: center;margin: auto;">
+      Below you can test out one
+      of our features by simulating the live update of a product's stock: <button onclick="myFunction()">Simulate</button>
+    </p>
+
+    <br><br><br><br><br><br><br><br>
+
+<body onload="myFunction2()">
+
+<script>
+  function myFunction2() {
+    const food = ["Apples","Bread","Brocoli","Cheese","Chicken Breast","Milk","Chips","Ground Beef","Orange","Potato","Pasta","Bacon","Lemonade","Pickles"];
+    const random = Math.floor(Math.random() * food.length);
+    setTimeout(function(){ alert(food[random] + ' - LOW STOCK!'); },
+    Math.floor(Math.random() * 10) + 1);
+  }
+  
+  </script>
+
+</div>
+  
+</html>
+    
+     
+</body>
+</html>
