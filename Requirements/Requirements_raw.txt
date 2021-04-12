@@ -1,0 +1,18 @@
+
+Req_1
+Login/Registry Validation
+Req_2
+Simple Minimal Layout. 
+Req_3
+Easy to understand Navigation system (UI).
+Req_4
+Give users common product information
+Req_5
+User can check Product availability
+Req_6
+Gives users customizable grocery list
+Req_7
+Gives user a full sortable product list
+Req_8
+User can adjust page using Settings element
+
