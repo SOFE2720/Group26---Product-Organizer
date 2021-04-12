@@ -6,10 +6,23 @@ The aim of our project is to create a quick, simple way for restaurants, grocery
 
 ## Table of Contents
 
-[Code](https://github.com/SOFE2720/Group26---Product-Organizer/main/Code)
+[Code](https://github.com/SOFE2720/Group26---Product-Organizer/tree/main/Code)
+  * Houses all code for Product Organizer Project
+  * to run, Open [Index.html](https://github.com/SOFE2720/Group26---Product-Organizer/blob/main/Code/index.html)
+  
+[Design](https://github.com/SOFE2720/Group26---Product-Organizer/tree/main/Design)
+  *	[All Class and/or conceptual models](https://github.com/SOFE2720/Group26---Product-Organizer/blob/main/Design/Conceptual%20Models%20-%20Classes.pdf)
+  *	[Behavioral models](https://github.com/SOFE2720/Group26---Product-Organizer/blob/main/Design/Behaviour%20Models.pdf)
 
-[Design](https://github.com/SOFE2720/Group26---Product-Organizer/main/Design)
+[Requirements](https://github.com/SOFE2720/Group26---Product-Organizer/tree/main/Requirements)
+  * [Tabular list of requirements](https://github.com/SOFE2720/Group26---Product-Organizer/blob/main/Requirements/Requirements.pdf)
 
-[Requirements](https://github.com/SOFE2720/Group26---Product-Organizer/main/Requirements)
+[Test Cases](https://github.com/SOFE2720/Group26---Product-Organizer/tree/main/Test%20Cases)
+  * [Prototyping](https://github.com/SOFE2720/Group26---Product-Organizer/blob/main/Test%20Cases/Prototyping.pdf)
+  *	[Test Cases](https://github.com/SOFE2720/Group26---Product-Organizer/blob/main/Test%20Cases/TestCases.pdf)
 
-[Use Cases](https://github.com/SOFE2720/Group26---Product-Organizer/main/UseCases)
+  
+[Use Cases](https://github.com/SOFE2720/Group26---Product-Organizer/tree/main/Use%20Cases)
+  * All relevant [Use Cases](https://github.com/SOFE2720/Group26---Product-Organizer/blob/main/Use%20Cases/Use%20Cases.pdf)
+  
+
